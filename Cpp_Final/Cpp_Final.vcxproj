@@ -127,16 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Models\Camisa.h" />
     <ClInclude Include="Models\Cotizacion.h" />
     <ClInclude Include="Models\Vendedor.h" />
     <ClInclude Include="Models\Prenda.h" />
     <ClInclude Include="Models\Tienda.h" />
+    <ClInclude Include="Models\Pantalon.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Models\Camisa.cpp" />
     <ClCompile Include="Models\Cotizacion.cpp" />
     <ClCompile Include="Models\Vendedor.cpp" />
     <ClCompile Include="Models\Prenda.cpp" />
     <ClCompile Include="Models\Tienda.cpp" />
+    <ClCompile Include="Models\Pantalon.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

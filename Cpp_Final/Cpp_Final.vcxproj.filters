@@ -27,6 +27,12 @@
     <ClInclude Include="Models\Prenda.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Models\Camisa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Pantalon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Models\Vendedor.cpp">
@@ -39,6 +45,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Models\Prenda.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Camisa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Pantalon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

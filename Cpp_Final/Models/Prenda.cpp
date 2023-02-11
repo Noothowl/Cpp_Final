@@ -1,9 +1,14 @@
-#include "Prenda.h"
+#include "prenda.h"
 
-Prenda::Prenda(std::string calidad, double precioUnitario, int stock)
-    : calidad(calidad), precioUnitario(precioUnitario), stock(stock) {}
+Prenda::Prenda(float precioUnitario, int stock)
+    : precioUnitario_(precioUnitario), stock_(stock) {}
 
-void Prenda::mostrarInfo() {
-    std::cout << "Calidad: " << calidad << ", Precio unitario: " << precioUnitario
-        << ", Stock: " << stock;
+void Prenda::setPrecioUnitario(float precioUnitario) {
+    precioUnitario_ = precioUnitario;
 }
+
+float Prenda::getPrecioUnitario() const { return precioUnitario_; }
+
+void Prenda::setStock(int stock) { stock_ = stock; }
+
+int Prenda::getStock() const { return stock_; }

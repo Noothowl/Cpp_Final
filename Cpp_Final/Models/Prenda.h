@@ -2,17 +2,19 @@
 #ifndef PRENDA_H
 #define PRENDA_H
 
-#include <iostream>
-
 class Prenda {
-private:
-    std::string calidad;
-    double precioUnitario;
-    int stock;
-
 public:
-    Prenda(std::string calidad, double precioUnitario, int stock);
-    void mostrarInfo();
+	Prenda(float precioUnitario, int stock);
+
+	void setPrecioUnitario(float precioUnitario);
+	float getPrecioUnitario() const;
+
+	void setStock(int stock);
+	int getStock() const;
+
+private:
+	float precioUnitario_;
+	int stock_;
 };
 
-#endif
+#endif  // PRENDA_H
