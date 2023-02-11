@@ -18,7 +18,13 @@
     <ClInclude Include="Models\Vendedor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cotizacion.h">
+    <ClInclude Include="Models\Cotizacion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Tienda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Prenda.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -26,7 +32,13 @@
     <ClCompile Include="Models\Vendedor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cotizacion.cpp">
+    <ClCompile Include="Models\Cotizacion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Tienda.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Prenda.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

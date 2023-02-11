@@ -1,21 +1,24 @@
 #pragma once
+#ifndef VENDEDOR_H
+#define VENDEDOR_H
+
+#include <iostream>
 #include <vector>
-#include <string>
 #include "cotizacion.h"
+#include "tienda.h"
 
-class Vendedor
-{
-public:
-    Vendedor(std::string nombre, std::string apellido, int id_vendedor);
-    void cotizar(Cotizacion cotizacion);
-    std::string getNombre();
-    std::string getApellido();
-    int getIdVendedor();
-    std::vector<Cotizacion> getHistorial();
-
+class Vendedor {
 private:
     std::string nombre;
     std::string apellido;
-    int id_vendedor;
-    std::vector<Cotizacion> historial;
+    int idVendedor;
+    std::vector<Cotizacion> historialCotizaciones;
+    Tienda tienda;
+
+public:
+    Vendedor(std::string nombre, std::string apellido, int idVendedor, Tienda tienda);
+    void agregarCotizacion(Cotizacion cotizacion);
+    void listarHistorialCotizaciones();
 };
+
+#endif
