@@ -19,6 +19,8 @@ public:
 
     void mostrarMensajeBienvenida() const;
     void mostrarMenu() const;
+    void inputCotizacionPrenda() const;
+    void inputCotizacionCalidad() const;
 };
 
 #endif // MENUPRINCIPAL_H

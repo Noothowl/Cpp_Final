@@ -1,17 +1,4 @@
-﻿  ControladorCotizacion.cpp
-C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Prenda.h(25,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Controlador\ControladorCotizacion.cpp(28,91): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  ControladorPrincipal.cpp
-C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Prenda.h(25,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Controlador.cpp
-C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Prenda.h(25,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Cotizacion.cpp
-C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Prenda.h(25,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Prenda.cpp
-C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Prenda.h(25,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Tienda.cpp
-C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Prenda.h(25,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  Vendedor.cpp
+﻿  Vendedor.cpp
 C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Prenda.h(25,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
 C:\Users\marti\OneDrive\Escritorio\Cpp_Final\FinalV2\Modelo\Vendedor.cpp(34,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   MainProgram.cpp
