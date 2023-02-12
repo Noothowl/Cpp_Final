@@ -1,0 +1,37 @@
+﻿  Cotizacion.cpp
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Prenda.cpp
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Tienda.cpp
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Vendedor.cpp
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,14): error C2011: 'Prenda': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,7): message : see declaration of 'Prenda'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(31,16): error C2011: 'Pantalon': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(31,7): message : see declaration of 'Pantalon'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(40,14): error C2011: 'Camisa': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(40,7): message : see declaration of 'Camisa'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Vendedor.cpp(52,1): error C2027: use of undefined type 'Prenda'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,7): message : see declaration of 'Prenda'
+  MainProgram.cpp
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,14): error C2011: 'Prenda': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,7): message : see declaration of 'Prenda'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(31,16): error C2011: 'Pantalon': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(31,7): message : see declaration of 'Pantalon'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(40,14): error C2011: 'Camisa': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(40,7): message : see declaration of 'Camisa'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Vendedor.cpp(52,1): error C2027: use of undefined type 'Prenda'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,7): message : see declaration of 'Prenda'
+  MenuPrincipal.cpp
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,14): error C2011: 'Prenda': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,7): message : see declaration of 'Prenda'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(31,16): error C2011: 'Pantalon': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(31,7): message : see declaration of 'Pantalon'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(40,14): error C2011: 'Camisa': 'class' type redefinition
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(40,7): message : see declaration of 'Camisa'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Vendedor.cpp(52,1): error C2027: use of undefined type 'Prenda'
+C:\Users\marti\OneDrive\Escritorio\FinalV3\FinalV3\Modelo\Prenda.cpp(6,7): message : see declaration of 'Prenda'
+  Generating Code...

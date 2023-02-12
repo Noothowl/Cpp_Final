@@ -1,6 +1,0 @@
-﻿  MainProgram.cpp
-C:\Users\marti\OneDrive\Escritorio\FinalV2\FinalV2\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  MenuPrincipal.cpp
-C:\Users\marti\OneDrive\Escritorio\FinalV2\FinalV2\Modelo\Prenda.cpp(20,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-  FinalV2.vcxproj -> C:\Users\marti\OneDrive\Escritorio\FinalV2\x64\Debug\FinalV2.exe
