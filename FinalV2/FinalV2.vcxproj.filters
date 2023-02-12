@@ -30,10 +30,10 @@
     <ClCompile Include="Modelo\Tienda.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vista\Vista.cpp">
+    <ClCompile Include="Vista\MenuPrincipal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vista\ProgramaMain.cpp">
+    <ClCompile Include="Vista\MainProgram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

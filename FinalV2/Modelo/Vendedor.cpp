@@ -17,6 +17,34 @@ public:
         this->id = id;
     }
 
+    string getNombre() {
+        return nombre;
+    }
+
+    void setNombre(string nombre) {
+        this->nombre = nombre;
+    }
+
+    string getApellido() {
+        return apellido;
+    }
+
+    void setApellido(string apellido) {
+        this->apellido = apellido;
+    }
+
+    int getId() {
+        return id;
+    }
+
+    void setId(int id) {
+        this->id = id;
+    }
+
+    map<int, Cotizacion> getHistorial() {
+        return historial;
+    }
+
     void realizarCotizacion(int idCotizacion, int idVendedor, int cotPrenda, int cantPrenda) {
         int resultado = cotPrenda * cantPrenda;
         time_t t = time(0);
