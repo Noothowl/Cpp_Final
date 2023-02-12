@@ -65,6 +65,7 @@ std::string Cotizacion::toString() const {
     str += "Fecha: " + fecha + " " + hora + "\n";
     str += "Vendedor: " + std::to_string(idVendedor) + "\n";
     str += "Prenda: " + cotPrenda->getNombre() + "\n";
+    str += "Precio unitario: "+ std::to_string(cotPrenda->getPrecioBase()) + "\n";
     str += "Cantidad: " + std::to_string(cantPrenda) + "\n";
     str += "Precio total: $" + std::to_string(resultado) + "\n";
     return str;

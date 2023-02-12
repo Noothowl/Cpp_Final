@@ -10,6 +10,15 @@ double Prenda::calcularPrecio() {
 Pantalon::Pantalon(double precioBase, Calidad calidad, int precioUnitario, int stock, TipoPantalon tipo)
     : Prenda(precioBase, calidad, precioUnitario, stock), tipo(tipo) {}
 
+double Pantalon::calcularPrecio() {
+    double precioFinal = precioBase;
+    if (tipo == TipoPantalon::Chupin)
+    {
+        precioFinal *= 0.12;
+    }
+    return precioFinal;
+}
+
 Camisa::Camisa(double precioBase, Calidad calidad, int precioUnitario, int stock, TipoManga manga, TipoCuello cuello)
     : Prenda(precioBase, calidad, precioUnitario, stock), manga(manga), cuello(cuello) {}
 

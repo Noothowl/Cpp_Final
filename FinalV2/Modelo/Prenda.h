@@ -21,6 +21,9 @@ public:
     void setStock(int stock) {
         this->stock = stock;
     }
+    int getPrecioBase() {
+        return precioBase;
+    }
 
 
     virtual double calcularPrecio();
@@ -33,6 +36,7 @@ public:
     std::string getNombre() const override {
         return "Pantalón";
     }
+    double calcularPrecio() override;
     TipoPantalon tipo;
 };
 
