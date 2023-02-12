@@ -14,6 +14,7 @@ public:
     MenuPrincipal(Vendedor vendedor, Tienda tienda) : vendedor(vendedor), tienda(tienda) {}
 
     void mostrarDatos() {
+        
         cout << "Nombre del vendedor: " << vendedor.getNombre() << " " << vendedor.getApellido() << " | ID: " << vendedor.getId() << endl;
         cout << "\n";
         cout << "Nombre de la tienda:" <<tienda.getNombre()<<" Direccion de la tienda : " << tienda.getDireccion() << endl;
@@ -25,27 +26,45 @@ public:
         cout << "3) Salir" << endl;
     }
 
+    void verHistorial() {
+        
+        cout << "Historial de Cotizaciones" << endl;
+        cout << "ID\tFecha\t\tHora\t\tCotizacion\tCantidad\tTotal" << endl;
+        for (auto& cotizacion : vendedor.getHistorial()) {
+            cout << cotizacion.second.getIdCotizacion() << "\t" << cotizacion.second.getFecha() << "\t" << cotizacion.second.getHora() << "\t\t" << cotizacion.second.getCotPrenda() << "\t\t" << cotizacion.second.getCantPrenda() << "\t\t" << cotizacion.second.getResultado() << endl;
+        }
+    }
 
     void iniciar() {
         int opcion;
         do {
+            system("cls");
             mostrarDatos();
             mostrarOpciones();
             cout << "Seleccione una opcion: ";
             cin >> opcion;
             switch (opcion) {
             case 1:
-                // Aquí iría la implementación de la opción 1, historial de cotizaciones
+                system("cls");
+                verHistorial();
+                cout << "Enter para contiuar";
+                cin.get();
+                cin.get();
                 break;
             case 2:
-                // Aquí iría la implementación de la opción 2, realizar cotización
+                
                 break;
             case 3:
                 cout << "Saliendo..." << endl;
                 break;
             default:
+                system("cls");
                 cout << "Opcion no valida, por favor seleccione una opcion valida" << endl;
+                cout << "Enter para contiuar";
+                cin.get();
+                cin.get();
             }
+            
         } while (opcion != 3);
     }
 };
