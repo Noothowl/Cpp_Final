@@ -14,6 +14,9 @@ private:
 public:
     MenuPrincipal(Vendedor* vendedor, Tienda* tienda);
 
+
+    void mostrarHistorialCotizaciones() const;
+
     void mostrarMensajeBienvenida() const;
     void mostrarMenu() const;
 };

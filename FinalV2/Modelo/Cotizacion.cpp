@@ -60,3 +60,12 @@ void Cotizacion::setCantPrenda(int cantPrenda) {
 void Cotizacion::setResultado(int resultado) {
     this->resultado = resultado;
 }
+std::string Cotizacion::toString() const {
+    std::string str = "Cotizacion #" + std::to_string(idCotizacion) + "\n";
+    str += "Fecha: " + fecha + " " + hora + "\n";
+    str += "Vendedor: " + std::to_string(idVendedor) + "\n";
+    str += "Prenda: " + cotPrenda->getNombre() + "\n";
+    str += "Cantidad: " + std::to_string(cantPrenda) + "\n";
+    str += "Precio total: $" + std::to_string(resultado) + "\n";
+    return str;
+}

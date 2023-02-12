@@ -138,6 +138,7 @@
     <ClCompile Include="Vista\MenuPrincipal.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Controlador\Controlador.h" />
     <ClInclude Include="Controlador\ControladorCotizacion.h" />
     <ClInclude Include="Modelo\Cotizacion.h" />
     <ClInclude Include="Modelo\Prenda.h" />

@@ -65,5 +65,8 @@
     <ClInclude Include="Vista\MenuPrincipal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Controlador\Controlador.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

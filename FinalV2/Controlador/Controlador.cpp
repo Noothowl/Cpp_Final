@@ -1,20 +1,9 @@
-#include <iostream>
-#include <ctime>
-using namespace std;
+#include "Controlador.h"
 
-#include "ControladorPrincipal.h"
-#include "ControladorCotizacion.h"
+Controlador::Controlador(ControladorPrincipal controladorPrincipal) : controladorPrincipal(controladorPrincipal) {}
 
-class Controlador {
-private:
-    ControladorPrincipal controladorPrincipal;
+void Controlador::realizarCotizacion(int id, int idVendedor, Prenda* cotPrenda, int cantPrenda) {
+    controladorPrincipal.getVendedor().realizarCotizacion(id, idVendedor, cotPrenda, cantPrenda);
+}
 
-public:
-    Controlador(ControladorPrincipal controladorPrincipal) : controladorPrincipal(controladorPrincipal) {}
-
-    void realizarCotizacion(int id, int idVendedor, Prenda* cotPrenda, int cantPrenda) {
-        controladorPrincipal.getVendedor().realizarCotizacion(id, idVendedor, cotPrenda, cantPrenda);
-    }
-
-    // otros métodos del controlador
-};
+// otros métodos del controlador

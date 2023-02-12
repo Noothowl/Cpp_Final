@@ -5,6 +5,7 @@
 #include <string>
 #include "Prenda.h"
 
+
 class Cotizacion {
 private:
     int idCotizacion;
@@ -16,6 +17,7 @@ private:
     int resultado;
 
 public:
+    std::string toString() const;
     Cotizacion();
 
     Cotizacion(int idCotizacion, std::string fecha, std::string hora, int idVendedor, Prenda* cotPrenda, int cantPrenda, int resultado);
