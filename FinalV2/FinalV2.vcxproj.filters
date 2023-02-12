@@ -33,5 +33,8 @@
     <ClCompile Include="Vista\Vista.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Vista\ProgramaMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

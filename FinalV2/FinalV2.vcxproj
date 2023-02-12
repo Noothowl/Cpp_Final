@@ -132,6 +132,7 @@
     <ClCompile Include="Modelo\Prenda.cpp" />
     <ClCompile Include="Modelo\Tienda.cpp" />
     <ClCompile Include="Modelo\Vendedor.cpp" />
+    <ClCompile Include="Vista\ProgramaMain.cpp" />
     <ClCompile Include="Vista\Vista.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,6 +1,8 @@
 #include <string>
 #include <vector>
-#include "Prenda.cpp";
+
+#include "Prenda.cpp"
+
 using namespace std;
 
 // Clase Tienda

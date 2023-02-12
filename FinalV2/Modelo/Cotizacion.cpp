@@ -16,6 +16,7 @@ class Cotizacion {
     int resultadoCalculo;
 
 public:
+    Cotizacion(){}
     Cotizacion(int id, string fecha, string hora, int idVendedor, int cotPrenda, int cantPrenda, int resultadoCalculo) {
         this->id = id;
         this->fecha = fecha;

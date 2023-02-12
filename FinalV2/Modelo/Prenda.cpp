@@ -11,7 +11,7 @@ protected:
     int precioUnitario;
     int stock;
 
-    enum TipoCuello { Mao, Comun };
+    enum TipoCuello { Mao, Normal };
     enum TipoPantalon { Chupin, Comun };
     enum TipoManga { Corta, Larga };
 
