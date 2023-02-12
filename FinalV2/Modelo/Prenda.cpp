@@ -1,11 +1,11 @@
 #include <string>
 #include <vector>
 
-enum Calidad { Estandar, Premium };
 
 // Clase abstracta Prenda
 class Prenda {
 protected:
+    enum Calidad { Estandar, Premium };
     double precioBase;
     Calidad calidad;
     int precioUnitario;

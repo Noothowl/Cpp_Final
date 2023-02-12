@@ -3,6 +3,7 @@
 #include <vector>
 #include <ctime>
 #include "Cotizacion.cpp"
+#include "Prenda.cpp"
 
 class Vendedor {
     string nombre;
@@ -45,8 +46,8 @@ public:
         return historial;
     }
 
-    void realizarCotizacion(int idCotizacion, int idVendedor, int cotPrenda, int cantPrenda) {
-        int resultado = cotPrenda * cantPrenda;
+    void realizarCotizacion(int idCotizacion, int idVendedor, Prenda* cotPrenda, int cantPrenda) {
+        int resultado = cotPrenda->calcularPrecio() * cantPrenda;
         time_t t = time(0);
         struct tm ahora;
         localtime_s(&ahora, &t);

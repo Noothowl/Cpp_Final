@@ -2,6 +2,7 @@
 #include <map>
 #include <string>
 #include <ctime>
+#include "Prenda.cpp"
 
 using namespace std;
 
@@ -11,14 +12,14 @@ class Cotizacion {
     string fecha;
     string hora;
     int idVendedor;
-    int cotPrenda;
+    Prenda* cotPrenda;
     int cantPrenda;
     int resultado;
 
 public:
     Cotizacion(){}
 
-    Cotizacion(int idCotizacion, string fecha, string hora, int idVendedor, int cotPrenda, int cantPrenda, int resultado)
+    Cotizacion(int idCotizacion, string fecha, string hora, int idVendedor, Prenda* cotPrenda, int cantPrenda, int resultado)
         : idCotizacion(idCotizacion), fecha(fecha), hora(hora), idVendedor(idVendedor), cotPrenda(cotPrenda), cantPrenda(cantPrenda), resultado(resultado) {}
 
     // Getters
@@ -38,7 +39,7 @@ public:
         return idVendedor;
     }
 
-    int getCotPrenda() {
+    Prenda* getCotPrenda() {
         return cotPrenda;
     }
 
@@ -67,7 +68,7 @@ public:
         this->idVendedor = idVendedor;
     }
 
-    void setCotPrenda(int cotPrenda) {
+    void setCotPrenda(Prenda* cotPrenda) {
         this->cotPrenda = cotPrenda;
     }
 
