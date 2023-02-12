@@ -1,13 +1,20 @@
-#include <iostream>
-#include <string>
-#include "MenuPrincipal.cpp"
-
-using namespace std;
+#include "MenuPrincipal.h"
+#include "../Modelo/Vendedor.h"
+#include "../Modelo/Tienda.h"
 
 int main() {
-    Tienda tienda("Mi Tienda", "Mi Direccion");
-    Vendedor vendedor("Juan", "Pérez", 1);
+    // Crear vendedor y tienda
+    Vendedor* vendedor = new Vendedor("Juan", "Pérez", 1);
+    Tienda* tienda = new Tienda("Mi Tienda", "Calle 123");
+
+    // Crear menú principal y mostrarlo
     MenuPrincipal menu(vendedor, tienda);
-    menu.iniciar();
+    menu.mostrarMensajeBienvenida();
+    menu.mostrarMenu();
+
+    // Liberar memoria de los objetos creados
+    delete vendedor;
+    delete tienda;
+
     return 0;
 }

@@ -1,19 +1,20 @@
 #include <iostream>
-#include <vector>
 #include <ctime>
-#include "../Modelo/Vendedor.cpp"
+using namespace std;
 
+#include "ControladorPrincipal.h"
+#include "ControladorCotizacion.h"
 
 class Controlador {
 private:
-    Vendedor vendedor;
+    ControladorPrincipal controladorPrincipal;
 
 public:
-    Controlador(Vendedor vendedor) : vendedor(vendedor) {}
+    Controlador(ControladorPrincipal controladorPrincipal) : controladorPrincipal(controladorPrincipal) {}
 
     void realizarCotizacion(int id, int idVendedor, Prenda* cotPrenda, int cantPrenda) {
-        vendedor.realizarCotizacion(id, idVendedor, cotPrenda, cantPrenda);
+        controladorPrincipal.getVendedor().realizarCotizacion(id, idVendedor, cotPrenda, cantPrenda);
     }
 
-
+    // otros métodos del controlador
 };

@@ -1,82 +1,62 @@
-#include <iostream>
-#include <map>
-#include <string>
-#include <ctime>
-#include "Prenda.cpp"
+#include "Cotizacion.h"
 
-using namespace std;
+Cotizacion::Cotizacion() {}
 
-// Clase Cotizacion
-class Cotizacion {
-    int idCotizacion;
-    string fecha;
-    string hora;
-    int idVendedor;
-    Prenda* cotPrenda;
-    int cantPrenda;
-    int resultado;
+Cotizacion::Cotizacion(int idCotizacion, std::string fecha, std::string hora, int idVendedor, Prenda* cotPrenda, int cantPrenda, int resultado)
+    : idCotizacion(idCotizacion), fecha(fecha), hora(hora), idVendedor(idVendedor), cotPrenda(cotPrenda), cantPrenda(cantPrenda), resultado(resultado) {}
 
-public:
-    Cotizacion(){}
+int Cotizacion::getIdCotizacion() {
+    return idCotizacion;
+}
 
-    Cotizacion(int idCotizacion, string fecha, string hora, int idVendedor, Prenda* cotPrenda, int cantPrenda, int resultado)
-        : idCotizacion(idCotizacion), fecha(fecha), hora(hora), idVendedor(idVendedor), cotPrenda(cotPrenda), cantPrenda(cantPrenda), resultado(resultado) {}
+std::string Cotizacion::getFecha() {
+    return fecha;
+}
 
-    // Getters
-    int getIdCotizacion() {
-        return idCotizacion;
-    }
+std::string Cotizacion::getHora() {
+    return hora;
+}
 
-    string getFecha() {
-        return fecha;
-    }
+int Cotizacion::getIdVendedor() {
+    return idVendedor;
+}
 
-    string getHora() {
-        return hora;
-    }
+Prenda* Cotizacion::getCotPrenda() {
+    return cotPrenda;
+}
 
-    int getIdVendedor() {
-        return idVendedor;
-    }
+int Cotizacion::getCantPrenda() {
+    return cantPrenda;
+}
 
-    Prenda* getCotPrenda() {
-        return cotPrenda;
-    }
+int Cotizacion::getResultado() {
+    return resultado;
+}
 
-    int getCantPrenda() {
-        return cantPrenda;
-    }
+void Cotizacion::setIdCotizacion(int idCotizacion) {
+    this->idCotizacion = idCotizacion;
+}
 
-    int getResultado() {
-        return resultado;
-    }
+void Cotizacion::setFecha(std::string fecha) {
+    this->fecha = fecha;
+}
 
-    // Setters
-    void setIdCotizacion(int idCotizacion) {
-        this->idCotizacion = idCotizacion;
-    }
+void Cotizacion::setHora(std::string hora) {
+    this->hora = hora;
+}
 
-    void setFecha(string fecha) {
-        this->fecha = fecha;
-    }
+void Cotizacion::setIdVendedor(int idVendedor) {
+    this->idVendedor = idVendedor;
+}
 
-    void setHora(string hora) {
-        this->hora = hora;
-    }
+void Cotizacion::setCotPrenda(Prenda* cotPrenda) {
+    this->cotPrenda = cotPrenda;
+}
 
-    void setIdVendedor(int idVendedor) {
-        this->idVendedor = idVendedor;
-    }
+void Cotizacion::setCantPrenda(int cantPrenda) {
+    this->cantPrenda = cantPrenda;
+}
 
-    void setCotPrenda(Prenda* cotPrenda) {
-        this->cotPrenda = cotPrenda;
-    }
-
-    void setCantPrenda(int cantPrenda) {
-        this->cantPrenda = cantPrenda;
-    }
-
-    void setResultado(int resultado) {
-        this->resultado = resultado;
-    }
-};
+void Cotizacion::setResultado(int resultado) {
+    this->resultado = resultado;
+}

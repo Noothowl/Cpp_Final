@@ -1,70 +1,20 @@
+#include "MenuPrincipal.h"
+#include "../Modelo/Vendedor.h"
+#include "../Modelo/Tienda.h"
 #include <iostream>
-#include <string>
-#include "../Modelo/Vendedor.cpp"
-#include "../Modelo/Tienda.cpp"
 
 using namespace std;
 
-class MenuPrincipal {
-private:
-    Vendedor vendedor;
-    Tienda tienda;
+MenuPrincipal::MenuPrincipal(Vendedor* vendedor, Tienda* tienda)
+    : vendedor(vendedor), tienda(tienda) {}
 
-public:
-    MenuPrincipal(Vendedor vendedor, Tienda tienda) : vendedor(vendedor), tienda(tienda) {}
+void MenuPrincipal::mostrarMensajeBienvenida() const {
+    cout << "Bienvenido " << vendedor->getNombre() << " " << vendedor->getApellido() << " (ID: " << vendedor->getId() << ")" << endl;
+    cout << "Tienda: " << tienda->getNombre() << " (" << tienda->getDireccion() << ")" << endl;
+}
 
-    void mostrarDatos() {
-        
-        cout << "Nombre del vendedor: " << vendedor.getNombre() << " " << vendedor.getApellido() << " | ID: " << vendedor.getId() << endl;
-        cout << "\n";
-        cout << "Nombre de la tienda:" <<tienda.getNombre()<<" Direccion de la tienda : " << tienda.getDireccion() << endl;
-    }
-
-    void mostrarOpciones() {
-        cout << "1) Historial de cotizaciones" << endl;
-        cout << "2) Realizar cotizacion" << endl;
-        cout << "3) Salir" << endl;
-    }
-
-    void verHistorial() {
-        
-        cout << "Historial de Cotizaciones" << endl;
-        cout << "ID\tFecha\t\tHora\t\tCotizacion\tCantidad\tTotal" << endl;
-        for (auto& cotizacion : vendedor.getHistorial()) {
-            cout << cotizacion.second.getIdCotizacion() << "\t" << cotizacion.second.getFecha() << "\t" << cotizacion.second.getHora() << "\t\t" << cotizacion.second.getCotPrenda() << "\t\t" << cotizacion.second.getCantPrenda() << "\t\t" << cotizacion.second.getResultado() << endl;
-        }
-    }
-
-    void iniciar() {
-        int opcion;
-        do {
-            system("cls");
-            mostrarDatos();
-            mostrarOpciones();
-            cout << "Seleccione una opcion: ";
-            cin >> opcion;
-            switch (opcion) {
-            case 1:
-                system("cls");
-                verHistorial();
-                cout << "Enter para contiuar";
-                cin.get();
-                cin.get();
-                break;
-            case 2:
-                
-                break;
-            case 3:
-                cout << "Saliendo..." << endl;
-                break;
-            default:
-                system("cls");
-                cout << "Opcion no valida, por favor seleccione una opcion valida" << endl;
-                cout << "Enter para contiuar";
-                cin.get();
-                cin.get();
-            }
-            
-        } while (opcion != 3);
-    }
-};
+void MenuPrincipal::mostrarMenu() const {
+    cout << "1. Opción 1" << endl;
+    cout << "2. Opción 2" << endl;
+    cout << "3. Opción 3" << endl;
+}

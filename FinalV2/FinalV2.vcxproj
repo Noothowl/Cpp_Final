@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Controlador\ControladorCotizacion.cpp" />
+    <ClCompile Include="Controlador\ControladorPrincipal.cpp" />
     <ClCompile Include="Controlador\Controlador.cpp" />
     <ClCompile Include="Modelo\Cotizacion.cpp" />
     <ClCompile Include="Modelo\Prenda.cpp" />
@@ -134,6 +136,15 @@
     <ClCompile Include="Modelo\Vendedor.cpp" />
     <ClCompile Include="Vista\MainProgram.cpp" />
     <ClCompile Include="Vista\MenuPrincipal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controlador\ControladorCotizacion.h" />
+    <ClInclude Include="Modelo\Cotizacion.h" />
+    <ClInclude Include="Modelo\Prenda.h" />
+    <ClInclude Include="Modelo\Tienda.h" />
+    <ClInclude Include="Modelo\Vendedor.h" />
+    <ClInclude Include="Controlador\ControladorPrincipal.h" />
+    <ClInclude Include="Vista\MenuPrincipal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

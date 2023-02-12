@@ -1,41 +1,27 @@
-#include <string>
-#include <vector>
+#include "Tienda.h"
 
-#include "Prenda.cpp"
+Tienda::Tienda(std::string nombre, std::string direccion) : nombre(nombre), direccion(direccion) {}
 
-using namespace std;
+std::string Tienda::getNombre() {
+    return nombre;
+}
 
-// Clase Tienda
-class Tienda {
-private:
-    string nombre;
-    string direccion;
-    vector<Prenda*> prendas;
+void Tienda::setNombre(std::string nombre) {
+    this->nombre = nombre;
+}
 
-public:
-    Tienda(string nombre, string direccion) : nombre(nombre), direccion(direccion) {}
+std::string Tienda::getDireccion() {
+    return direccion;
+}
 
-    string getNombre() {
-        return nombre;
-    }
+void Tienda::setDireccion(std::string direccion) {
+    this->direccion = direccion;
+}
 
-    void setNombre(string nombre) {
-        this->nombre = nombre;
-    }
+std::vector<Prenda*> Tienda::getPrendas() {
+    return prendas;
+}
 
-    string getDireccion() {
-        return direccion;
-    }
-
-    void setDireccion(string direccion) {
-        this->direccion = direccion;
-    }
-
-    vector<Prenda*> getPrendas() {
-        return prendas;
-    }
-
-    void agregarPrenda(Prenda* prenda) {
-        prendas.push_back(prenda);
-    }
-};
+void Tienda::agregarPrenda(Prenda* prenda) {
+    prendas.push_back(prenda);
+}
